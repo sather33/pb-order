@@ -1,0 +1,37 @@
+@import 'bootstrap-sprockets'; //this first
+@import 'bootstrap'; //this beind the 'bootstrap-sprockets'
+
+.te{
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 5%;
+  padding: 2px;
+}
+.word{
+  border-radius: 5px;
+  font-size: 2cm;
+  background-color: slateblue;
+  text-align: center;
+  border: 1px solid;
+}
+.word2{
+  font-size: 1cm;
+}
+.word3{
+  text-align: center;
+  border-radius: 5px;
+  background-color: skyblue;
+}
+.word4{
+  margin-top: 1px;
+}
+.dat{
+  color: red;
+}
+.edi{
+  float: right;
+  padding: 5px;
+  border: 1px solid white;
+  background-color: skyblue;
+  border-radius: 10px;
+}
