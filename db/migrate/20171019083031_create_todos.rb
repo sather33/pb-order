@@ -5,7 +5,6 @@ class CreateTodos < ActiveRecord::Migration[5.1]
       t.string :name
       t.date :date
       t.text :note
-
       t.timestamps
     end
   end

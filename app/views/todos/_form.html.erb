@@ -5,23 +5,28 @@
     <%end%>
   </ul>
 <%end%>
-
-<div class="form container">
+<%= render :partial=> "title"%>
+<div class="form container input">
 
 <%=form_for @todo do |f|%>
+
   <div class="form-group">
-    <%=f.label :name ,'Name'%>
-    <%=f.text_field :name ,class:"form-control"%>
+    <%=f.label :customer ,'Customer'%>
+    <%=f.text_field :customer ,class:"form-control size"%>
   </div>
 
   <div class="form-group">
     <%=f.label :date ,'Date'%>
-    <%=f.text_field :date ,class:"form-control"%>
+    <%=f.date_select :date ,class:"form-control"%>
   </div>
 
   <div class="form-group">
     <%=f.label :note ,'Note'%>
-    <%=f.text_area :note ,class:"form-control"%>
+    <%=f.text_area :note ,class:"form-control size"%>
+  </div>
+  <div class="form-group">
+    <%=f.label :name ,'Member'%>
+    <%=f.text_field :name ,class:"form-control size"%>
   </div>
   <%=f.submit %>
 <%end%>

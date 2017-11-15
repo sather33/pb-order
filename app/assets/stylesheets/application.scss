@@ -1,37 +1,142 @@
 @import 'bootstrap-sprockets'; //this first
 @import 'bootstrap'; //this beind the 'bootstrap-sprockets'
 
-.te{
-  border-radius: 5px;
-  border: 1px solid;
-  margin: 5%;
-  padding: 2px;
-}
-.word{
-  border-radius: 5px;
-  font-size: 2cm;
-  background-color: slateblue;
+//title cs
+.title{
+  // border: 1px solid red;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 20%;
   text-align: center;
-  border: 1px solid;
 }
-.word2{
+.title_w{
+  // border: 1px solid red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:white;
+  font-size: 2cm;
+  background-color: MidnightBlue;
+}
+.order-new{
+  margin-left: 30%;
+  // border: 1px solid green;
+  background-color: lightgray;
+  font-size: 1cm;
+  width: 40%;
+}
+//order list css
+.list{
+  margin-top: 20%;
+  border-radius: 5px;
+  // border: 1px solid;
+  width: 100%;
+}
+.kuku{
+  width: 40px;
+}
+.list-word{
   font-size: 1cm;
 }
-.word3{
-  text-align: center;
-  border-radius: 5px;
-  background-color: skyblue;
+.date-w{
+  font-size: 1cm;
 }
-.word4{
-  margin-top: 1px;
-}
-.dat{
-  color: red;
-}
-.edi{
+.little-control{
+  // border: 1px solid blue;
+  width:40%;
   float: right;
-  padding: 5px;
-  border: 1px solid white;
-  background-color: skyblue;
-  border-radius: 10px;
+}
+.little-control li{
+  margin: 2px;
+  margin-right: 30px;
+  // border: 1px solid red;
+  display: inline-block;
+  font-size: 0.7cm;
+  float: right;
+}
+.little-control li span{
+  font-size: 1cm;
+}
+//form
+.input{
+  margin-top: 10%;
+  font-size: 1cm;
+}
+.size{
+  font-size: 0.7cm;
+  padding: 20px;
+}
+@media screen and (min-width:992px) {
+
+}
+
+@media screen and (max-width:991px) {
+  //title cs
+  .title{
+
+  }
+  .title_w{
+    padding-top: 20px;
+    padding-bottom: 20;
+    font-size: 1.7cm;
+  }
+  .list{
+    margin-top: 27%;
+  }
+}
+@media screen and (max-width:480px) {
+  .title{
+    height: 25%
+  }
+  .title_w{
+    font-size: 1cm;
+  }
+  .order-new{
+    margin-left: 30%;
+    // border: 1px solid green;
+    font-size: 0.8cm;
+
+  }
+  .list{
+    margin-top: 33%;
+    width: 86%;
+    position:absolute;
+    left: 7%;
+    // border: 2px solid green;
+  }
+  .kuku{
+    font-size:0.5cm;
+    width: 20px;
+  }
+  .list-word{
+    font-size: 0.6cm;
+  }
+  .date-w{
+    font-size: 0.6cm;
+  }
+  .little-control{
+    // border: 1px solid blue;
+    width:50%;
+    float: right;
+  }
+  .little-control li{
+    margin:0px;
+    margin-right: 0px;
+    // border: 1px solid red;
+    font-size: 0cm;
+  }
+  .little-control li span{
+    font-size: 1cm;
+  }
+  //form
+  .input{
+    margin-top: 10%;
+    font-size: 1cm;
+  }
+  .size{
+    font-size: 0.7cm;
+    padding: 20px;
+  }
+
 }

@@ -1,7 +1,7 @@
 class TodosController < ApplicationController
   before_action :set_todo, :only=>[:show,:edit,:update,:destroy]
   def index
-    @todos=Todo.all
+    @todos=Todo.order(date: :asc)
   end
   def new
     @todo=Todo.new
@@ -42,7 +42,7 @@ class TodosController < ApplicationController
 
   private
   def todo_params
-    params.require(:todo).permit(:name,:date,:note)
+    params.require(:todo).permit(:customer,:name,:date,:note)
   end
   def set_todo
     @todo = Todo.find(params[:id])

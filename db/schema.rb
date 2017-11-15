@@ -10,16 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171019083031) do
-
-  create_table "todo_lists", force: :cascade do |t|
-    t.string "name"
-    t.date "date"
-    t.text "note"
-    t.string "file_location"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20171115102510) do
 
   create_table "todos", force: :cascade do |t|
     t.string "name"
@@ -27,6 +18,7 @@ ActiveRecord::Schema.define(version: 20171019083031) do
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "customer"
   end
 
 end
