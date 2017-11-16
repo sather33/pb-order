@@ -10,7 +10,7 @@ class TodosController < ApplicationController
   def create
     @todo=Todo.new(todo_params)
     if @todo.save
-      redirect_to todo_url
+      redirect_to todos_url
     else
       render :action=>:new
     end
