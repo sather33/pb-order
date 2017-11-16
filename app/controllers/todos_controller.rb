@@ -10,7 +10,7 @@ class TodosController < ApplicationController
   def create
     @todo=Todo.new(todo_params)
     if @todo.save
-      render :action =>:show
+      redirect_to todo_url
     else
       render :action=>:new
     end
@@ -27,8 +27,8 @@ class TodosController < ApplicationController
   def update
     #@todo=Todo.find(params[:id])
     if @todo.update_attributes(todo_params)
-      render :action =>:show
-      #redirect_to todos_url
+      #render :action =>:show
+      redirect_to todos_url
     else
       render :action =>:edit
     end

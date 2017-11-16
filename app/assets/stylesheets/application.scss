@@ -67,6 +67,10 @@
   font-size: 0.7cm;
   padding: 20px;
 }
+.b-size{
+  font-size:1cm;
+  padding: 5px;
+}
 @media screen and (min-width:992px) {
 
 }
@@ -131,12 +135,24 @@
   }
   //form
   .input{
-    margin-top: 10%;
-    font-size: 1cm;
+    margin-top: 33%;
+    font-size: 0.6cm;
   }
   .size{
-    font-size: 0.7cm;
-    padding: 20px;
+    font-size: 0.5cm;
+    padding: 5px;
   }
-
+  .b-size{
+    font-size: 0.5cm;
+  }
+}
+@media screen and (max-width:396px) {
+  .title_w{
+    font-size: 0.9cm;
+  }
+  .order-new{
+    margin-left: 30%;
+    // border: 1px solid green;
+    font-size: 0.7cm;
+  }
 }

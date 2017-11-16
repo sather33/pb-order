@@ -1,18 +1,24 @@
-<div class="te">
-  <div class="word">
-    Todo List
+<%= render :partial=> "title"%>
+
+<div class="container">
+  <div class="list">
+    <ul class="list-word list-group">
+      <li class="list-group-item">
+        <span>Customer: </span> <%=@todo.customer%><br>
+        <span>Date: </span><%=@todo.date%><br>
+        <span>Note: </span><%=@todo.note%><br>
+        <span>Member:</span><%=@todo.name%><br><br>
+        <%=link_to edit_todo_path(@todo) do%>
+          <button type="button" class="btn btn-primary b-size">Edit</button>
+        <%end%>
+        <%=link_to todos_url do%>
+          <button type="button" class="btn btn-default b-size">Back</button>
+        <%end%>
+      </li>
+    </ul>
+
   </div>
-  <div class="word2">
-    <span>Name: </span> <%=@todo.name%>
-    <br/>
-    <span>Date: </span><%=@todo.date%>
-    <br/>
-    <span>Note: </span><%=@todo.note%>
-  </div>
-  <div class="word2 word3">
-    <%=link_to 'Edit' ,edit_todo_path(@todo)%>
-  </div>
-  <div class="word2 word3 word4">
-    <%=link_to 'Back',todos_url%>
-  </div>
+
+
+
 </div>

@@ -8,7 +8,7 @@
 <%= render :partial=> "title"%>
 <div class="form container input">
 
-<%=form_for @todo do |f|%>
+  <%=form_for @todo do |f|%>
 
   <div class="form-group">
     <%=f.label :customer ,'Customer'%>
@@ -28,6 +28,9 @@
     <%=f.label :name ,'Member'%>
     <%=f.text_field :name ,class:"form-control size"%>
   </div>
-  <%=f.submit %>
+  <%=f.submit 'Create',class:"btn btn-primary b-size"%>
+  <%=link_to todos_url do%>
+    <button type="button" class="btn btn-default b-size">Back</button>
+  <%end%>
 <%end%>
 </div>
