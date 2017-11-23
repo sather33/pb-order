@@ -1,4 +1,6 @@
 class Admin::TodosController < ApplicationController
+  before_action :authenticate_user!
+  before_action :authenticate_admin
   before_action :set_todo, :only=>[:show,:edit,:update,:destroy]
   def index
     @todos=Todo.order(date: :asc)
@@ -46,5 +48,11 @@ class Admin::TodosController < ApplicationController
   end
   def set_todo
     @todo = Todo.find(params[:id])
+  end
+  def authenticate_admin
+    unless current_user.admin?
+      flash[:alert] = "Not allow!"
+      redirect_to root_path
+    end
   end
 end

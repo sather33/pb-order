@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root "todos#index"
 
   namespace :admin do
+    resources :todos
     root "todos#index"
   end
 
