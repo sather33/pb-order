@@ -9,10 +9,13 @@
    <br>
      <%= link_to('登出', destroy_user_session_path, method: :delete) %> |
      <%= link_to('修改密碼', edit_user_registration_path) %>
+     <%if current_user.role=="admin"%>
+      |<%= link_to('Admin', admin_todos_path) %>
+      |<%= link_to('Back', todos_path) %>
+     <%end%>
    <% else %>
      <%= link_to('註冊', new_user_registration_path) %> |
      <%= link_to('登入', new_user_session_path) %>
   <% end %>
-  |
-  <%= link_to('Admin', admin_todos_path) %>
+  
 </div>
