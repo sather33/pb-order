@@ -1,6 +1,6 @@
 @import 'bootstrap-sprockets'; //this first
 @import 'bootstrap'; //this beind the 'bootstrap-sprockets'
-
+//@import 'dev-login';
 //title cs
 .title{
   //border: 1px solid red;
@@ -71,6 +71,13 @@
   font-size:1cm;
   padding: 5px;
 }
+//login
+.login-content{
+  //border: 2px solid red;
+  text-align: center;
+  margin-top: 12%;
+}
+
 @media screen and (min-width:992px) {
 
 }
@@ -87,6 +94,10 @@
   }
   .list{
     margin-top: 27%;
+  }
+  .login-content{
+
+    margin-top: 20%;
   }
 }
 @media screen and (max-width:480px) {
@@ -145,6 +156,10 @@
   .b-size{
     font-size: 0.5cm;
   }
+  .login-content{
+
+    margin-top: 28%;
+  }
 }
 @media screen and (max-width:396px) {
   .title_w{
@@ -158,6 +173,10 @@
   .little-control li span{
     font-size: 0.8cm;
   }
+  .login-content{
+
+    margin-top: 30%;
+  }
 }
 @media screen and (max-width:375px) {
   .title_w{
@@ -170,6 +189,10 @@
   }
   .little-control li span{
     font-size: 0.7cm;
+  }
+  .login-content{
+
+    margin-top: 31%;
   }
 }
 
